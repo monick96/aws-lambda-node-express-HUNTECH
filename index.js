@@ -7,5 +7,5 @@ app.get('/', (req, res) => {
     res.send('<h1>Hola GRUPO 6 desde Express + serverless-http en AWS LAMBDA 👋</h1>');
 });
 
-//exporta la funcion que lamda va a invocar 
+//exporta la funcion que lambda va a invocar 
 module.exports.handler = serverless(app);
