@@ -29,8 +29,9 @@ cd aws-lambda-node-express-prueba
 ```
 npm install
 ```
+muy importante el punto al final
 ```
-zip -r lambdaHuntech.zip
+zip -r lambdaHuntech.zip .
 ```
 ```
 aws lambda update-function-code --function-name NOMBRE_DE_TU_FUNCION_LAMBDA --zip-file fileb://lambdaHuntech.zip
