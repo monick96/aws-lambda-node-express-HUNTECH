@@ -15,9 +15,9 @@ Handler: index.handler
 
 ## 5. En AWS crear api gateway
 AWS Console → api gateway → crear api, http api, poner nombre, asociar a nombre de api que creamos , implementacion por default → crear ruta , asociar  a la lambda → crear.
-
+##
 ## Pasos para hacer actualización de backend desde el CLI del Laboratorio de AWS
-### (esto por que tenemos credenciales temporales y cambian todo el tiempo) va requerir que configures lambda en tu cuenta (pasos arriba)
+#### (esto por que tenemos credenciales temporales y cambian todo el tiempo) Para estos pasos va requerir que configures lambda en tu cuenta (pasos arriba)
 ## 1. Levantar laboratorio con start lab
 ## 2. En la CLI del lab Clonar este repositorio
 
