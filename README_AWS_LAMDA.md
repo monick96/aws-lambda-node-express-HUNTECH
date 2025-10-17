@@ -36,3 +36,25 @@ zip -r lambdaHuntech.zip .
 ```
 aws lambda update-function-code --function-name NOMBRE_DE_TU_FUNCION_LAMBDA --zip-file fileb://lambdaHuntech.zip
 ```
+
+
+
+#
+### para correr el .sh 
+
+```
+git clone https://github.com/monick96/aws-lambda-node-express-prueba
+
+```
+
+```
+cd aws-lambda-node-express-prueba
+```
+dar permisos de ejecución
+```
+chmod +x actualizarLambda.sh
+```
+ejecutar
+```
+./actualizarLambda.sh
+```
