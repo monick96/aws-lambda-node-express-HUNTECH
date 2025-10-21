@@ -36,7 +36,7 @@ app.get('/carreras', async(req, res) => {
         console.error(err);
 
         res.status(500)
-        res.send(JSON.stringify({ error: 'Error al obtener carreras'+ err.mensaje }));
+        res.send(JSON.stringify({ error: 'Error al obtener carreras: '+ err.mensaje }));
 
     }
 });
