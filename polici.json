@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:sts::637423528371:assumed-role/voclabs/user4353412=Monica_Melgarejo"
+      },
+      "Action": [
+        "dynamodb:PutItem",
+        "dynamodb:GetItem",
+        "dynamodb:Scan",
+        "dynamodb:Query",
+        "dynamodb:*"
+      ],
+      "Resource": "arn:aws:dynamodb:us-east-1:734039142844:table/carrera"
+    }
+  ]
+}
+
