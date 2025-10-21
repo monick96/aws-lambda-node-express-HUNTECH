@@ -15,7 +15,8 @@ const client = new DynamoDBClient({ region: 'us-east-1' });
 const dynamo = DynamoDBDocumentClient.from(client);
 
 //la tabla
-const TABLE_NAME = 'arn:aws:dynamodb:us-east-1:734039142844:table/carrera';
+//const TABLE_NAME = 'arn:aws:dynamodb:us-east-1:734039142844:table/carrera';
+const TABLE_NAME = 'carrera';
 
 app.get('/', (req, res) => {
     res.status(200);
