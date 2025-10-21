@@ -58,3 +58,14 @@ ejecutar
 ```
 ./actualizarLambda.sh
 ```
+
+### GET A TABLA DYNAMO EN OTRA CUENTA AWS en local
+-nuestras cuentas tienen arn para verlo es ```aws sts get-caller-identity``` en cli de aws. Ese arn de mi usuario lo pusimos en la politica de la tabla carrera.. [politica](./polici.json)
+- en la consola , en cada tabla se debe otorgar acceso con politica de tabla a las cuentas permitidas a acceder.... 
+-  en nuestra pc en windows en la ruta users/ crear -> .aws/credentials y colocar ahi todo lo que aparece en aws details cuando levantamos el lab(las credenciales temporales)
+- en el proyecto instale: 
+    - **@aws-sdk/client-dynamodb**
+    - **@aws-sdk/lib-dynamodb**
+
+- con esa librerias que toman las credenciales que guarde, accedo a la tabla que me compartieron, la llamo por arn (la arn no es un dato sensible, por que por mas que lo intentes acceder si no estas en las politicas no deberia dejarte ver la info de la tabla)
+- [metodos dynamo ](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_dynamodb_code_examples.html)

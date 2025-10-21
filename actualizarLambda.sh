@@ -32,12 +32,3 @@ aws lambda update-function-code \
   --zip-file "fileb://$ZIP_NAME"
 
 echo "Despliegue completado!"
-
-# Volver al directorio padre
-cd ..
-
-# Eliminar carpeta del cli de aws
-echo "Eliminando carpeta del repositorio..."
-rm -rf "$REPO_DIR"
-
-echo "Script finalizado."
