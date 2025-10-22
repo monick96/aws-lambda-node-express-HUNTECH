@@ -1,12 +1,13 @@
 //imports necesarios para aws
 const { DynamoDBClient } = require('@aws-sdk/client-dynamodb');
-const { DynamoDBDocumentClient, ScanCommand } = require('@aws-sdk/lib-dynamodb');
+const { DynamoDBDocumentClient, ScanCommand, PutCommand } = require('@aws-sdk/lib-dynamodb');
 const DOC = require('./doc');
 
 const serverless = require('serverless-http');//el adaptador de expreess para lamda
 // Lambda no escucha, solo ejecuta función por cada petición.
 const express = require('express');
 const app = express();
+app.use(express.json());//parsea el body a json
 
 const HOSTNAME = '127.0.0.1';
 const PORT = 3000;
