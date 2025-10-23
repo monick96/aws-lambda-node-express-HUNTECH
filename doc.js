@@ -6,7 +6,7 @@ const DOC = {
       POST: '/carrera -> crea nueva carrera (body: id, nombre, id_institucion_educativa, status, info_link(opcional))'
     },
     ejemploPostCarrera: {
-      POST: '/carrera',
+      POST: '/carreras',
       body: {
         id: 15,
         nombre: 'Tecnicatura en Inteligencia Artificial y analisis de datos',
