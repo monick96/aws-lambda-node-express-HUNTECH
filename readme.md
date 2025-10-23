@@ -69,3 +69,10 @@ ejecutar
 
 - con esa librerias que toman las credenciales que guarde, accedo a la tabla que me compartieron, la llamo por arn (la arn no es un dato sensible, por que por mas que lo intentes acceder si no estas en las politicas no deberia dejarte ver la info de la tabla)
 - [metodos dynamo ](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_dynamodb_code_examples.html)
+
+###
+
+borrar carpeta en bash
+```
+rm -rf nombre-carpeta
+```
