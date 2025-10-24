@@ -1,12 +1,12 @@
 const DOC = {
     mensaje: 'Hola GRUPO 6 desde Express + serverless-http en AWS LAMBDA 👋',
-    uso: 'RUTAS HASTA EL MOMENTO',
+    uso: 'RUTAS HASTA EL MOMENTO - Son los métodos de Mati adaptados a express ',
     endpoints: {
-      GET: '/carreras -> lista todas las carreras',
-      POST: '/carrera -> crea nueva carrera (body: id, nombre, id_institucion_educativa, status, info_link(opcional))'
+      GET: '/proyectos -> lista todas las proyectos',
+      POST: '/proyecto -> crea nueva carrera (body: id, nombre, id_institucion_educativa, status, info_link(opcional))'
     },
     ejemploPostCarrera: {
-      POST: '/carreras',
+      POST: '/proyecto',
       body: {
         id: 15,
         nombre: 'Tecnicatura en Inteligencia Artificial y analisis de datos',
