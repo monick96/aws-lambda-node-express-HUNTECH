@@ -12,13 +12,15 @@ app.use(express.json());//parsea el body a json
 const HOSTNAME = '127.0.0.1';
 const PORT = 3000;
 
-//para credenciales //no necesito arn por que estoy en la politica de la tabla? mentira , necesito si os i llamar por arn por que no esta en mi cuenta
-const client = new DynamoDBClient({ region: 'us-east-1' });
-const dynamo = DynamoDBDocumentClient.from(client);
+// ---- CONFIG ----
+//la tabla ahora es unica, aloja todas las entidades
+//process.env es por si hay varios entornos
+const TABLE_NAME = process.env.TABLE_NAME || 'plataforma';
+const REGION = process.env.AWS_REGION || 'us-east-1';
 
-//la tabla
-//const TABLE_NAME = 'arn:aws:dynamodb:us-east-1:734039142844:table/carrera';
-const TABLE_NAME = 'carrera';
+//para credenciales 
+const client = new DynamoDBClient({ region: REGION });
+const dynamo = DynamoDBDocumentClient.from(client);
 
 app.get('/', (req, res) => {
     res.status(200);
