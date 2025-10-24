@@ -76,3 +76,15 @@ borrar carpeta en bash
 ```
 rm -rf nombre-carpeta
 ```
+
+######
+clonar tabla unica con este comando en la terminal de AWS
+```
+aws dynamodb create-table \
+  --table-name plataforma \
+  --attribute-definitions AttributeName=PK,AttributeType=S AttributeName=SK,AttributeType=S \
+  --key-schema AttributeName=PK,KeyType=HASH AttributeName=SK,KeyType=RANGE \
+  --billing-mode PAY_PER_REQUEST
+  
+```
+
