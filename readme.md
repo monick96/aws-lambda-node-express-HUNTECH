@@ -1,4 +1,17 @@
-# Hacer un server express compatible con lamda SIN CLI
+# Este repo puede ejecutarse en local si tu cuenta AWS tiene las tablas con mismo nombre y tenes en tu pc las credenciales aws
+## pasos
+1. clonar repo
+2. instalar paquetes y dependencias
+```
+ npm i
+```
+3. ejecutar
+```
+ npm index.js
+```
+
+##
+## Hacer un server express compatible con lamda SIN CLI
  ## 1. Instalar dependencias
 ```
 npm init -y
@@ -70,13 +83,6 @@ ejecutar
 - con esa librerias que toman las credenciales que guarde, accedo a la tabla que me compartieron, la llamo por arn (la arn no es un dato sensible, por que por mas que lo intentes acceder si no estas en las politicas no deberia dejarte ver la info de la tabla)
 - [metodos dynamo ](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/javascript_dynamodb_code_examples.html)
 
-###
-
-borrar carpeta en bash
-```
-rm -rf nombre-carpeta
-```
-
 ######
 clonar tabla unica con este comando en la terminal de AWS
 ```
@@ -85,6 +91,20 @@ aws dynamodb create-table \
   --attribute-definitions AttributeName=PK,AttributeType=S AttributeName=SK,AttributeType=S \
   --key-schema AttributeName=PK,KeyType=HASH AttributeName=SK,KeyType=RANGE \
   --billing-mode PAY_PER_REQUEST
-  
+
 ```
 
+
+
+
+
+
+
+###
+
+###
+
+borrar carpeta en bash(es una nota para mi)
+```
+rm -rf nombre-carpeta
+```
