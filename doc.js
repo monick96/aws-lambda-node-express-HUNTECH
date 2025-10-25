@@ -8,14 +8,22 @@ const DOC = {
     ejemploPostCarrera: {
       POST: '/proyecto',
       body: {
-        id: 15,
-        nombre: 'Tecnicatura en Inteligencia Artificial y analisis de datos',
-        id_institucion_educativa: 11,
-        status: 'available',
-        info_link: 'https://ifts11.edu.ar/ia'
+        nombre: "Matecito",
+        descripcion: "Aplicación web y móvil para venta de mates y accesorios. Permite a los usuarios comprar, personalizar y seguir sus pedidos. Incluye panel para administradores de tiendas TodoModa.",
+        info_link: "https://www.matecito.com",
+        buscando_devs: true,
+        gerente_id: "MAN#123"
       },
-      nota: "recordar poner las comillas a los nombres de las propiedades"
+      respuestaExito:{ 
+        message: "Proyecto creado", 
+        proyectId: "10486a57-9717-4903-b402-199356b7ce7b" 
+      },
+      notas: [
+        "Recordar poner las comillas a los nombres de las propiedades.",
+        "Todavía no existe validación de roles, así que en gerente_id puede ir cualquier string."
+      ]
     }
-}
+  }
+
 
 module.exports = DOC;

@@ -16,7 +16,7 @@ const PORT = 3000;
 // ---- CONFIG ----
 //la tabla ahora es unica, aloja todas las entidades
 //process.env es por si hay varios entornos
-const TABLE_NAME = process.env.TABLE_NAME || 'plataforma';
+const TABLE_NAME = process.env.TABLE_NAME || 'huntechApp';
 const REGION = process.env.AWS_REGION || 'us-east-1';
 
 //para credenciales 
@@ -26,7 +26,7 @@ const dynamo = DynamoDBDocumentClient.from(client);
 app.get('/', (req, res) => {
     res.status(200);
     res.setHeader('Content-Type', 'application/json');
-    res.send(json(DOC));
+    res.json(DOC);
 });
 
 //obtener proyectos
@@ -128,7 +128,7 @@ app.post('/proyecto', async (req, res) => {
         res.status(500);
         res.json({ error: 'Error creando la carrera: ' + err.message });
     }
-    
+
 });
 
 
