@@ -9,7 +9,7 @@ const DOC = {
       POST: '/proyecto',
       body: {
         nombre: "Matecito",
-        descripcion: "Aplicación web y móvil para venta de mates y accesorios. Permite a los usuarios comprar, personalizar y seguir sus pedidos. Incluye panel para administradores de tiendas TodoModa.",
+        descripcion: "Aplicación web y móvil para venta de mates y accesorios.",
         info_link: "https://www.matecito.com",
         buscando_devs: true,
         gerente_id: "MAN#123"
