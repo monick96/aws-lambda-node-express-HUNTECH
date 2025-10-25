@@ -3,9 +3,9 @@ const DOC = {
     uso: 'RUTAS HASTA EL MOMENTO - Son los métodos de Mati adaptados a express ',
     endpoints: {
       GET: '/proyectos -> lista todas las proyectos',
-      POST: '/proyecto -> crea nueva carrera (body: id, nombre, id_institucion_educativa, status, info_link(opcional))'
+      POST: '/proyecto -> crea nuevo proyecto (body: nombre(obligatorio), descripcion(obligatorio), info_link(opcional),buscando_devs(obligatorio),gerente_id(obligatorio))'
     },
-    ejemploPostCarrera: {
+    ejemploPostProyecto: {
       POST: '/proyecto',
       body: {
         nombre: "Matecito",
