@@ -5,11 +5,7 @@
 ```
  npm i
 ```
-3. ejecutar
-```
- npm index.js
-```
-4. Crear tabla unica con este comando en la terminal de AWS
+3. Crear tabla unica con este comando en la terminal de AWS
 ```
 aws dynamodb create-table \
   --table-name huntechApp \
@@ -18,16 +14,15 @@ aws dynamodb create-table \
   --billing-mode PAY_PER_REQUEST
 
 ```
-5. Para CRUD A TABLA DYNAMO EN nuestas credeciales  AWS desde local
+4. Para CRUD A TABLA DYNAMO EN nuestas credeciales  AWS desde local
 -  en nuestra pc en windows en la ruta users/nuestroUser crear -> .aws/credentials y colocar ahi todo lo que aparece en aws details cuando levantamos el lab(las credenciales temporales)
 
-6. si esta todo listo ejecutar y probar rutas
+5. si esta todo listo ejecutar y probar rutas
 ```
 node index.js
 ```
 
 #
-
 ## ESTOS PASOS QUE SIGUEN SOLO SI SE QUIERE DESPLEGAR LaMBDA CON API GATEGAY
 # Pasos para desplegar una lambda con api gategay
 1. clonar este repo 
