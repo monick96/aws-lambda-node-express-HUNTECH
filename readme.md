@@ -18,8 +18,13 @@ aws dynamodb create-table \
   --billing-mode PAY_PER_REQUEST
 
 ```
-5. ### CRUD A TABLA DYNAMO EN nuestas credeciales  AWS desde local
+5. Para CRUD A TABLA DYNAMO EN nuestas credeciales  AWS desde local
 -  en nuestra pc en windows en la ruta users/nuestroUser crear -> .aws/credentials y colocar ahi todo lo que aparece en aws details cuando levantamos el lab(las credenciales temporales)
+
+6. si esta todo listo ejecutar y probar rutas
+```
+node index.js
+```
 
 #
 
