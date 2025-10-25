@@ -1,21 +1,29 @@
 const DOC = {
     mensaje: 'Hola GRUPO 6 desde Express + serverless-http en AWS LAMBDA 👋',
-    uso: 'RUTAS HASTA EL MOMENTO',
+    uso: 'RUTAS HASTA EL MOMENTO - Son los métodos de Mati adaptados a express ',
     endpoints: {
-      GET: '/carreras -> lista todas las carreras',
-      POST: '/carrera -> crea nueva carrera (body: id, nombre, id_institucion_educativa, status, info_link(opcional))'
+      GET: '/proyectos -> lista todas las proyectos',
+      POST: '/proyecto -> crea nuevo proyecto (body: nombre(obligatorio), descripcion(obligatorio), info_link(opcional),buscando_devs(obligatorio),gerente_id(obligatorio))'
     },
-    ejemploPostCarrera: {
-      POST: '/carreras',
+    ejemploPostProyecto: {
+      POST: '/proyecto',
       body: {
-        id: 15,
-        nombre: 'Tecnicatura en Inteligencia Artificial y analisis de datos',
-        id_institucion_educativa: 11,
-        status: 'available',
-        info_link: 'https://ifts11.edu.ar/ia'
+        nombre: "Matecito",
+        descripcion: "Aplicación web y móvil para venta de mates y accesorios.",
+        info_link: "https://www.matecito.com",
+        buscando_devs: true,
+        gerente_id: "MAN#123"
       },
-      nota: "recordar poner las comillas a los nombres de las propiedades"
+      respuestaExito:{ 
+        message: "Proyecto creado", 
+        proyectId: "10486a57-9717-4903-b402-199356b7ce7b" 
+      },
+      notas: [
+        "Recordar poner las comillas a los nombres de las propiedades.",
+        "Todavía no existe validación de roles, así que en gerente_id puede ir cualquier string."
+      ]
     }
-}
+  }
+
 
 module.exports = DOC;
